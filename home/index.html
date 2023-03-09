@@ -1,0 +1,52 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<title>Little Angels Academy</title>
+		<meta charset="utf-8">
+		<link rel="stylesheets" type="text/css" href="homecss.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- a css rule is a set of instructions that defines how a particular html or a group of elements should be styled -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css"  href="style.css" >
+	
+	</head>
+	<body>
+		<header>
+			<h1>Little Angels Academy</h1>
+			<p>A School That Nurtures Your Child's Mind, Heart, and Soul</p>
+			<div id="bottom-message">Scroll down for more information
+				<a href="../revision.html#form1">fill our form</a>
+			</div>
+			
+		</header>
+		<main>
+			
+			<div class="contents fa fa-envelope">Admissions</div>
+			
+			<div class="container">
+				<img class="main-image" src="little angels logo.jpg" alt="little angels logo"></img>
+				<h2>About Us</h2>
+				<p>Little Angels Academy is a primary school that was founded in 2009 by the manager, Jane, and the director, Peter. Our mottoo is <span style="color: brown;">Strive to Excel</span> We have three branches located in Kiganjo, Kimorori, and Kisii. Our mission is to provide quality education that goes beyond academics to instill values that will shape the character of our future leaders. We have a dedicated team of passionate teachers who are committed to creating a supportive learning environment for our students. Our modern facilities and resources enable us to deliver a holistic education that nurtures the mind, heart, and soul of our students.</p>
+			</div>
+			
+			
+			<script>
+		window.addEventListener('scroll', function() {
+			var bottomMessage = document.getElementById('bottom-message');
+			var headerHeight = document.getElementsByTagName('header')[0].clientHeight;
+			var scrollPosition = window.scrollY + window.innerHeight;
+			if (scrollPosition >= headerHeight) {
+				bottomMessage.style.opacity = 0;
+			} else {
+				bottomMessage.style.opacity = 1;
+			}
+		});
+	</script>
+
+		</main>
+		<footer>
+			
+		</footer>
+	</body>
+</html>
